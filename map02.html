@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- map and filter method -->
+    <!-- accept array elements from user and find sum of positive nos (using map() / filter()) -->
+    <script>
+        let arr = [];
+        let number = parseInt(prompt("Enter The Size of array:"));
+        for (let i = 0; i < number; i++) {
+            arr[i] = parseInt(prompt("Enter The Array Element:", i))
+        }
+        document.write("The Array Element Are:")
+        for (let i = 0; i < number; i++) {
+            document.write(arr[i]);
+        }
+
+
+        let sum = 0;
+        let positivenumber = arr.filter((value) => value > 0)
+
+        let newarray = positivenumber.map((value) => {
+         sum += value;
+         return sum;
+        })
+        document.write("positive Element Are:");
+        document.write(positivenumber, '<br>');
+        document.write("sum is:");
+        document.write(newarray);
+    </script>
+</body>
+
+</html>
