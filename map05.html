@@ -1,0 +1,36 @@
+<!-- Given an array of numbers, create an array with numbers which contains numbers greater than 10, then square each number from new array and display it. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const squarenumber = () => {
+            let arr = [];
+            let number = parseInt(prompt("Enter The size of Array:"));
+            for (let i = 0; i < number; i++) {
+                arr[i] = parseInt(prompt("Enter  The Array Element:"));
+            }
+            document.write("Array Element Are:");
+            for (let i = 0; i < number; i++) {
+                document.write(arr[i]);
+            }
+            let greaternumber = arr.filter((val) => {
+                return val > 10;
+            })
+            let squarenum = greaternumber.map((val) => val * val);
+            document.write("<br>");
+            document.write("square number is :");
+            document.write(squarenum.join(","));
+
+        }
+        squarenumber();
+    </script>
+</body>
+
+</html>
