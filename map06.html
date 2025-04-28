@@ -1,0 +1,36 @@
+<!-- Given an array of temperatures in Celsius, convert them into Fahrenheit -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const convertFahrenheit = () => {
+            let Celsius = []
+            let number = parseInt(prompt("Enter The size of Array:"));
+            for (let i = 0; i < number; i++) {
+                Celsius[i] = parseInt(prompt("Enter  The Celsius:"));
+            }
+
+            document.write("Celsius Are:");
+            for (let i = 0; i < Celsius.length; i++) {
+                document.write(Celsius[i]+"<br>");
+            }
+            document.write("<br>");
+            let Fahrenheit = Celsius.map((Celsius) => {
+                return (Celsius * 9 / 5) + (32)
+            })
+            document.write("Celsius is:", Celsius.join(",") + "<br>");
+            document.write("Fahrenheit is:", Fahrenheit.join(","));
+        }
+        convertFahrenheit();
+    </script>
+
+</body>
+
+</html>
