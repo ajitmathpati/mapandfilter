@@ -20,17 +20,18 @@
         for (let i = 0; i < number; i++) {
             document.write(arr[i]);
         }
+        document.write("<br>");
 
 
         let sum = 0;
         let positivenumber = arr.filter((value) => value > 0)
 
-        let newarray = positivenumber.map((value) => {
-         sum += value;
-         return sum;
-        })
+        let newarray = positivenumber.reduce((acc, curvalue) => {
+            return acc + curvalue;
+
+        }, sum)
         document.write("positive Element Are:");
-        document.write(positivenumber, '<br>');
+        document.write(positivenumber.join(" "), '<br>');
         document.write("sum is:");
         document.write(newarray);
     </script>
