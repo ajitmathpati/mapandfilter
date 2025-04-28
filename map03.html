@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Given an array of numbers, return a new array where each element is doubled. -->
+    <script>
+        let number = parseInt(prompt("Enter The size Of array"));
+        let Array = [];
+        document.write("Enter The Array Element"+"<br>");
+        for (let i = 0; i < number; i++) {
+            Array[i] = parseInt(prompt(" "));
+
+        }
+        document.write("Array Elements Are :");
+        for (let i = 0; i < Array.length; i++) {
+            document.write(Array[i]);
+        }
+    
+        let newarray = Array.map((val) => {
+            return val * 2;
+
+        })
+        document.write("<br>")
+        document.write("doubled Array is:");
+        document.write(newarray.join(" "));
+    </script>
+
+</body>
+
+</html>
