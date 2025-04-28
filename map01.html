@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let number = parseInt(prompt("Enter The Size of Array:"));
+        document.write("Enter The Array Element:");
+        for (let i = 0; i < number; ++i) {
+            arr[i] = parseInt(prompt(" " + i))
+        }
+        let newarr = arr.map(num => num * 10)
+
+        document.write(newarr.join(" "));
+    </script>
+</body>
+
+</html>
