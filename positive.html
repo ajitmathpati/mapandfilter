@@ -1,0 +1,24 @@
+<!-- accept array elements from user and display only positive elements from an array (using map() / filter()) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        let number = parseInt(prompt("Enter The Size Of Array:"));
+        for (let i = 0; i < number; i++) {
+            array[i] = parseInt(prompt("Enter The Array Element: ", i));
+        }
+        let pos_Element = array.filter((value) => value > 0);
+        document.write("positive Element:",pos_Element.join(" "));
+    </script>
+
+</body>
+
+</html>
