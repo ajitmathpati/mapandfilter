@@ -1,0 +1,36 @@
+<!-- Given an array of numbers, create a new array with only the even numbers. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const Evennumber = () => {
+            let arr = [];
+            let number = parseInt(prompt("Enter The Size Of Array"))
+            
+            for (let i = 0; i < number; i++) {
+
+                arr[i] = parseInt(prompt(" "));
+            }
+            document.write("Array Element Are:");
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i]);
+            }
+
+            let newarray = arr.filter((val) => val % 2 == 0);
+            document.write("<br>")
+            document.write("Even Number Is:");
+            document.write(newarray.join(" "));
+        }
+        Evennumber();
+
+    </script>
+</body>
+
+</html>
