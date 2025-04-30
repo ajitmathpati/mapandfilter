@@ -1,0 +1,29 @@
+<!-- Given an array of strings, create a new array that contains only the first letter of each word. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const firstLetterOfEachWord = (char) => {
+            let result = char.map((firstchar) => {
+                return firstchar[0];
+            });
+            return result;
+
+        }
+
+        let arr = ["ajit", "amisha", "amit", "neha", "shruti", "sushi", "omkar"];
+        let ans = firstLetterOfEachWord(arr);
+        document.write(ans.join(" "));
+
+
+    </script>
+</body>
+
+</html>
