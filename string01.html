@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const greaterThenFiveCharacter = (greaterval) => {
+            document.write("greater than 5 :", greaterval.join(" "));
+
+
+
+        }
+
+        let arr = ["ajit", "mathpati", "amisha", "itcahi", "vilas", "neha"];
+        let result = arr.filter((val) => {
+            return val.length > 5;
+        });
+
+        greaterThenFiveCharacter(result);
+
+    </script>
+
+</body>
+
+</html>
