@@ -1,0 +1,37 @@
+<!-- Given an array of strings, create a new array containing the length of each word. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const lengthOfEachWord = () => {
+
+
+            let num = parseInt(prompt("Enter The Size Of Array:"));
+            let arr = [];
+            for (let i = 0; i < num; i++) {
+                arr[i] = prompt("Enter The String:");
+
+            }
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i] + "<br>");
+
+            }
+
+            let result = arr.map((value) => value.length);
+            document.write(result.join(" "));
+        }
+        lengthOfEachWord();
+
+    </script>
+
+</body>
+
+</html>
