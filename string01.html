@@ -9,19 +9,29 @@
 
 <body>
     <script>
-        const greaterThenFiveCharacter = (greaterval) => {
-            document.write("greater than 5 :", greaterval.join(" "));
+        // const greaterThenFiveCharacter = (greaterval) => {
+        //     document.write("greater than 5 :", greaterval.join(" "));
 
 
+
+        // }
+
+        // let arr = ["ajit", "mathpati", "amisha", "itcahi", "vilas", "neha"];
+        // let result = arr.filter((val) => {
+        //     return val.length > 5;
+        // });
+
+        // greaterThenFiveCharacter(result);
+
+
+        const StringGreaterThenFive = (arr) => {
+            return arr.filter((value) => value.length <= 5);
 
         }
 
-        let arr = ["ajit", "mathpati", "amisha", "itcahi", "vilas", "neha"];
-        let result = arr.filter((val) => {
-            return val.length > 5;
-        });
-
-        greaterThenFiveCharacter(result);
+        let arr = ["Ajit", "Mathpati", "vinod", "vilas", "sachinbhai", "sandeep"];
+        let result = StringGreaterThenFive(arr);
+        document.write("less than five character:", result.join(" "));
 
     </script>
 
