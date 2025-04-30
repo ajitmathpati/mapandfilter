@@ -1,0 +1,25 @@
+<!-- Given an array of strings, create a new array containing only the words that start with the letter "b". -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["ajit", "amit", "sujit", "ram", "vinod", "amisha", "neha"];
+        let result = arr.filter((char) => {
+            if (char[0] !== 'a') {
+                return char;
+            }
+        });
+        document.write("original Arr:", arr.join(" "));
+        document.write("<br>");
+        document.write("The Name Strat With A:", result.join(" "));
+    </script>
+</body>
+
+</html>
