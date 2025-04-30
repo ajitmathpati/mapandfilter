@@ -10,15 +10,38 @@
 
 <body>
     <script>
-        let arr = ["ajit", "amit", "sujit", "ram", "vinod", "amisha", "neha"];
-        let result = arr.filter((char) => {
-            if (char[0] !== 'a') {
-                return char;
-            }
-        });
-        document.write("original Arr:", arr.join(" "));
-        document.write("<br>");
-        document.write("The Name Strat With A:", result.join(" "));
+        // let arr = ["ajit", "amit", "sujit", "ram", "vinod", "amisha", "neha"];
+        // let result = arr.filter((char) => {
+        //     if (char[0] !== 'a') {
+        //         return char;
+        //     }
+        // });
+        // document.write("original Arr:", arr.join(" "));
+        // document.write("<br>");
+        // document.write("The Name Strat With A:", result.join(" "));
+
+
+
+        function findCharacterstartwitha(char) {
+            let result = char.filter((val) => {
+                if (val[0] === 'a')
+                    return val;
+            });
+            return result;
+        }
+
+        let num = parseInt(prompt("Enter The Size Of Array:"));
+        let arr = [];
+        for (let i = 0; i < num; i++) {
+            arr[i] = prompt("Enter the String Of Array:");
+        }
+        document.write("Taking Array Is :", arr.join(" "));
+        document.write("<br>")
+
+        let findString = findCharacterstartwitha(arr);
+
+        document.write("Name start with A :", findString.join(" "));
+
     </script>
 </body>
 
