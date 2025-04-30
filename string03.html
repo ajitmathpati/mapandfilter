@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function countCharacter(count) {
+            let result = count.map((val) => val.length);
+            return result;
+
+        }
+
+
+        let arr = ["ajit", "mathpati", "sujit", "ram", "mantesh", "patel", "neha"];
+        let ans = countCharacter(arr);
+        document.write(arr.join(" ") + '<br>');
+        document.write(ans.join(" "));
+    </script>
+</body>
+
+</html>
